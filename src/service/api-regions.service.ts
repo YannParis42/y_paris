@@ -29,6 +29,8 @@ export class ApiRegionsService {
     return this.httpClient.get<Array<Communes>>(this.rawUrl+this.departementsUrl+'/'+departementCode+'/communes')
   }
 
+
+
 }
 
 

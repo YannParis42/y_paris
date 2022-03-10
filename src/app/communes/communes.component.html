@@ -1,3 +1,19 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a routerLink="/regions">
+        Régions
+      </a>
+    </li>
+    <li class="breadcrumb-item active">
+      Départements
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">
+      Communes
+    </li>
+  </ol>
+</nav>
+
 
 <div class="col-8 m-auto">
   <table class="table table-striped table-hover mt-3 text-center">
@@ -6,8 +22,8 @@
         <th>Nom</th>
         <th>Code</th>
         <th>Departement</th>
-        <th>Code postaux</th>
         <th>Population</th>
+        <th>Code postaux</th>
       </tr>
     </thead>
     <tbody>
@@ -16,12 +32,12 @@
         <td>{{commune.code}}</td>
         <td>{{commune.codeDepartement}}</td>
         <td>{{commune.codeRegion}}</td>
+        <td>{{commune.population}}</td>
         <td>
           <ul class="list-unstyled">
             <li *ngFor="let codePostaux of commune.codePostaux">{{codePostaux.codeP}}</li>
           </ul>
         </td>
-        <td>{{commune.population}}</td>
       </tr>
     </tbody>
   </table>
