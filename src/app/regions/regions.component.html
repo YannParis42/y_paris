@@ -1,0 +1,19 @@
+<div *ngIf="regionsArray.length>0" class="row">
+
+  <div class="col-6 m-auto">
+    <table class="table table-striped table-hover mt-3 text-center ">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let region of regionsArray">
+          <td>{{region.nom}}</td>
+          <td>{{region.code}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
