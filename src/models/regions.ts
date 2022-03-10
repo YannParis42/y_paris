@@ -1,4 +1,4 @@
-export interface Regions{
-  nom:string;
+export interface Regions {
+  nom: string;
   code: string;
 }

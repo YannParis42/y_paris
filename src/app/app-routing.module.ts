@@ -1,9 +1,13 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CommunesComponent } from './communes/communes.component';
+import { DepartementsComponent } from './departements/departements.component';
 import { RegionsComponent } from './regions/regions.component';
 
 const routes: Routes = [
-{ path:'', component: RegionsComponent}
+{ path:'regions', component: RegionsComponent},
+{ path:'regions/:numRegion/departements', component: DepartementsComponent},
+{ path:'regions/:numRegion/departements/:numDepartements/communes', component:CommunesComponent }
 ];
 
 @NgModule({

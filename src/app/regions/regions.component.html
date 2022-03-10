@@ -9,7 +9,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let region of regionsArray">
+        <tr *ngFor="let region of regionsArray" routerLink="/regions/{{region.code}}/departements">
           <td>{{region.nom}}</td>
           <td>{{region.code}}</td>
         </tr>

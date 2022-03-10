@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegionsComponent } from './regions/regions.component';
+import { DepartementsComponent } from './departements/departements.component';
+import { CommunesComponent } from './communes/communes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    RegionsComponent
+    RegionsComponent,
+    DepartementsComponent,
+    CommunesComponent
   ],
   imports: [
     BrowserModule,

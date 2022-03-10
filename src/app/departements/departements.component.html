@@ -1,0 +1,21 @@
+<div *ngIf="departementArray.length>0" class="row">
+
+  <div class="col-6 m-auto">
+    <table class="table table-striped table-hover mt-3 text-center">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Code</th>
+          <th>Code Région</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let departement of departementArray" routerLink="/regions/{{departement.codeRegion}}/departements/{{departement.code}}/communes">
+          <td>{{departement.nom}}</td>
+          <td>{{departement.code}}</td>
+          <td>{{departement.codeRegion}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
